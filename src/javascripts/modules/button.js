@@ -10,16 +10,20 @@ export default class Button {
             duration: 800,
             particlesAmountCoefficient: 7,
             speed: 3,
-            oscillationCoefficient: 1
+            oscillationCoefficient: 1,
+	        // complete: () => {
+		    //     window.location.href = "//game.web-tycoon.com";
+	        // }
         };
         
-        particlesOpts.complete = () => {
-            console.log('button complete')
-        };
+        
         const particles = new Particles(bttn, particlesOpts);
     
         let buttonVisible = true;
         bttn.addEventListener('click', () => {
+	        setTimeout(() => {
+		        window.location.href = "https://game.web-tycoon.com/?invite=xgTM";
+	        }, 800);
             if ( !particles.isAnimating() && buttonVisible ) {
                 particles.disintegrate();
                 buttonVisible = !buttonVisible;
