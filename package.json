@@ -6,6 +6,8 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "blendid": "^4.4.3",
-    "parallax-js": "^3.1.0"
+    "numeral": "^2.0.6",
+    "parallax-js": "^3.1.0",
+    "rellax": "^1.7.1"
   }
 }
