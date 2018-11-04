@@ -1,0 +1,16 @@
+.footer {
+  //background-color: #1b5276;
+  background-color: $color-background;
+  color: #fff;
+  line-height: 4rem;
+
+  a {
+    color: #fff;
+    opacity: .7;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}

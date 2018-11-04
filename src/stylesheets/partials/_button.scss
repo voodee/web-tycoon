@@ -1,0 +1,74 @@
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.grid__item {
+  position: relative;
+  display: inline-block;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+  overflow: visible;
+}
+
+
+.icon {
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+svg:not(:root){overflow:hidden;}
+
+.particles {
+  position: relative;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.particles-canvas {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+
+.particles-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.particles-button {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  border-radius: 5px;
+  background: #00bf9b;
+  color: #fff;
+  border: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  padding: .7rem 2rem;
+  will-change: transform;
+
+  .particles:hover & {
+    background: #00ac8c;
+  }
+}
+
+.particles-button:focus {
+  outline: none;
+}
+
+.no-js .particles-button {
+  grid-area: 1 / 1 / 2 / 2;
+}

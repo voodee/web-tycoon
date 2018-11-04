@@ -5,3 +5,47 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #293e51;
 }
+
+
+.text {
+  &_secondary {
+    color: $color-secondary;
+  }
+
+  &_h2,
+  &_h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #293e51;
+  }
+
+  &_h2 {
+    font-size: 2.2rem;
+  }
+
+  &_h3 {
+    font-size: 1.4rem;
+  }
+
+  &_right {
+    text-align: right;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_600 {
+    font-weight: 600;
+  }
+}
+
+.color {
+  &_blue {
+    color: $color-blue;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
